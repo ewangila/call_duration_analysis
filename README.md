@@ -14,3 +14,25 @@ Analyzes call-center call durations under a normal distribution assumption, chec
 
 ## Installation
 pip install -r requirements.txt (bash)
+
+## Sample Output
+Mean: 8.0066
+Std: 1.9622
+Within 1 Std: 0.6830
+Within 2 Std: 0.9550
+Within 3 Std: 0.9970
+Probability Exceed Target: 0.1545
+Agents Needed: 5
+
+## Visualization
+![Call Duration Analysis](presentations/call_durations_analysis.png)
+
+## Project Structure
+├── call_duration_analysis.py
+├── presentations/call_durations_analysis.png
+├── requirements.txt
+├── LICENSE
+└── README.md
+
+## License
+MIT License – see [LICENSE](LICENSE)
