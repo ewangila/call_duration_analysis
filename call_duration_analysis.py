@@ -4,7 +4,7 @@ import scipy.stats as stats
 import matplotlib.pyplot as plt
 
 def analyze_call_durations(call_data, target_duration=None):
-    """Analyzes call duration distributions and checks SLA compliance."""
+    """ Analyzes call duration distributions and checks SLA compliance."""
     # Ensure data is a numpy array for vectorized operations
     call_data = np.asarray(call_data)
     mean_dur, std_dur = np.mean(call_data), np.std(call_data)
