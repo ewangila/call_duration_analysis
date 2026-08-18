@@ -31,3 +31,24 @@ This project generates mock call duration data (mean = 8 minutes, σ = 2 minutes
 
 ```bash
 pip install -r requirements.txt
+## Usage
+Bashpython cci.py
+The script will:
+
+Generate 1,000 normally distributed call durations
+Print summary statistics and SLA metrics
+Save a high-resolution plot to presentations/call_durations_analysis.png
+Display the plot
+
+## Sample Output
+textMean: 8.0066
+Std: 1.9622
+Within 1 Std: 0.6830
+Within 2 Std: 0.9550
+Within 3 Std: 0.9970
+Probability Exceed Target: 0.1545
+Agents Needed: 5
+## Visualization
+<img src="presentations/call_durations_analysis.png" alt="Call Duration Analysis">
+The left panel shows the distribution of call durations with a fitted normal curve.
+The right panel is a Q-Q plot confirming that the data closely follows a normal distribution.
